@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-container{
+    display: flex;
+    flex-direction: column;
+}
+.top-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    height: 3rem;
+    width: 100%;
+}
+.item-header{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+
+}
+.navbar-top{
+    display: flex;
+    gap: 10px;
+}
+.navbar-button{
+    display: flex;
+    gap: 10px;
+}
+menu{
+    padding-top: 1px solid red;
+   
+}
+a{
+    text-decoration: none;
+}
+menu ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center; 
+    height: 3rem;
+   
+}
+.main-section-1{
+    background-image: url(../asset/imagenes/imagen-principal.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+/*botones dentro section-1 de main*/
+.button{
+    margin-top: 3px;
+    margin-bottom: 1rem;
+}
+.button-left{
+    background-color: yellow;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 15px;
+    width: 8rem;
+
+}
+.button-right{
+    background-color: transparent;
+    border: 1px solid yellow;
+    padding: 0.5rem;
+    border-radius: 15px;
+    width: 8rem;
+    color: yellow;
+}
+/*titulo corresponde al contenido dentro de la imagen background section-1 main*/
+.contenido-section-1{
+    margin-top: auto;
+}
+.titulo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%; /* Ajusta según tus necesidades */
+    max-width: 400px; /* Para asegurarte de que funciona bien en iPhone 5 */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-track {
+    display: flex;
+    
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    animation: slide 15s infinite;
+    }
+  
+  .carousel-item {
+    min-width: 100%;
+    scroll-snap-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .carousel-item img {
+    display: flex;
+    width: 40%;
+    height: auto;
+    display: block; 
+  }
+  
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-100%); }
+  40% { transform: translateX(-200%); }
+  60% { transform: translateX(-300%); }
+  80% { transform: translateX(-400%); }
+  100% { transform: translateX(0); }
+}
+
+.carousel-track {
+  animation: slide 20s;
+
+}
+/*galeria de imagenes hecha con grid*/
+.galeria-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;  
+    gap: 10px ;  
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
