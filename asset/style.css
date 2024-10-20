@@ -228,13 +228,14 @@ menu ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 255, 0, 0.116);
 }
 .input{
     border: 1px solid #000;
     background-color: #ffff;
     width: 15rem;
     padding: 0.5rem;
-    bor
+    
 }
 .main-form h1{
     font-family: "Roboto", serif;
@@ -247,5 +248,16 @@ menu ul{
     font-weight: 300;
     font-style: normal;
     font-weight: 0.6rem;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 10rem;
+    justify-items: center;
+    color: #fff;
+    background-color: #000;
+}
+.footer-container a{
+    color: #fff;
 }
 
