@@ -21,6 +21,8 @@
     justify-content: space-between;
     height: 4rem;
     align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 
 }
 .navbar-top{
@@ -37,6 +39,8 @@ menu{
 }
 a{
     text-decoration: none;
+    color: #000;
+    cursor: pointer;
 }
 menu ul{
     display: flex;
@@ -60,6 +64,7 @@ menu ul{
 .button{
     margin-top: 3px;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 .button-left{
     background-color: yellow;
@@ -67,6 +72,7 @@ menu ul{
     padding: 0.5rem;
     border-radius: 15px;
     width: 8rem;
+    cursor: pointer;
 
 }
 .button-right{
@@ -76,6 +82,7 @@ menu ul{
     border-radius: 15px;
     width: 8rem;
     color: yellow;
+    cursor: pointer;
 }
 /*titulo corresponde al contenido dentro de la imagen background section-1 main*/
 .contenido-section-1{
@@ -87,12 +94,53 @@ menu ul{
     flex-direction: column;
     color: yellow;
     gap: 3px;
-    flex-wrap: wrap;
+    
 }
+.titulo-galeria{
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      
+}
+.titulo-galeria h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 50;
+    padding-bottom: 0.5rem;
+}
+.titulo-galeria p{
+    font-family: sans-serif;
+    font-weight: 50;
+   
+}
+.titulo-section-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+    justify-content: center;
 
-.carousel {
+}
+.titulo-main-section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+}
+.titulo-main-section-2 h2{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+.titulo-main-section-2 h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 50;
+}
+.carousel-section-2{
     overflow: hidden;
-    width: 100%; /* Ajusta según tus necesidades */
+    width: 50%; /* Ajusta según tus necesidades */
     max-width: 400px; /* Para asegurarte de que funciona bien en iPhone 5 */
     border: 2px solid #ccc;
     border-radius: 10px;
@@ -106,7 +154,7 @@ menu ul{
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
-    animation: slide 15s infinite;
+    animation: slide 3s infinite;
     }
   
   .carousel-item {
@@ -140,12 +188,64 @@ menu ul{
 /*galeria de imagenes hecha con grid*/
 .galeria-grid{
     display: grid;
-    grid-template-columns: auto auto auto;  
+    grid-template-columns: 1fr 1fr 1fr;  
     gap: 10px ;  
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 .card img{
     width: 100%;
-    height: 100%;
+    height: 85%;
     cursor: pointer;
+}
+.footer-img-galeria{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.logos-divertidos{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;   
+}
+.logos img{
+    width: 5rem;
+    
+   
+}
+.logos{
+    height: 10rem;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;    
+}
+.main-form{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    border: 1px solid #000;
+    background-color: #ffff;
+    width: 15rem;
+    padding: 0.5rem;
+    bor
+}
+.main-form h1{
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: normal;
+}
+.h3-main-form{
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-weight: 0.6rem;
 }
 
